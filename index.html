@@ -46,16 +46,27 @@
 			<aside id="default-popup" class="avgrund-popup">
 				<h2>What is this?</h2>
 				<p>
-					In <em>The Black Swan</em>, Nassim Taleb describes two societies, mediocristan and extremistan.<br><br>
-					In <b>Mediocristan</b>, wealth is distributed normally, with extremes being highly unlikely. I've represented Mediocristan as Denmark, which has a relatively low Gini coefficient (G=0.24).<br>
-					In <b>Extremistan</b>, wealth is distributed more like a power-law, with the top percentiles holding the vast majority of the wealth. I've represented Extremistan as South Africa, which has a relatively high Gini coefficient (G=0.631).<br>
+					In <em>The Black Swan</em>, Nassim Taleb illustrates income inequality by describing two societies, Mediocristan and Extremistan.<br><br>
+
+                                        <b>Mediocristan</b> is a society where outliers don't significantly skew the total.
+                                        <br>
+                                        <b>Extremistan</b> is a society where outliers significantly skew the total.
+                                        <br>
+
+                                        <br>
+                                        In Taleb's example, citizens' weights are determined by these value distributions. So, in Mediocristan, the heaviest person is no more than a couple times the weight of the average person. In Extremistan, the difference is much larger [1].
+                                        <br>
+
+                                        <br>
+                                        For this visualization I've represented Mediocristan as Denmark, and Extremistan as South Africa. Denmark has a relatively low Gini coefficient (G=0.24), and South Africa a relatively high one (G=0.631). Gini coefficients are a common measure of inequality [2].<br>
+
 					<br>
-					The key is that <b>wealth ownership is represented as weight</b>. That is, each circle represents a person, and the corresponding number their weight (aka 'wealth ownership'). Toggle between the two and see the difference!<br>
-					<br>
-					Note: The visualization essentially represents a Lorenz curve, which means a circle's radius represents not absolute wealth ownership, but <em>relative</em> wealth ownership. Thus, the visualization can only highlight wealth inequality, but gives no insight into absolute wealth. Watch the average to get a sense of the population's inequality.<br>
-					<br>
-					More details:
-					Everything is being rendered client-side. Check out the source and mess with the Gini coefficients!
+
+					Each circle represents a citizen, and their number is their weight. A person's weight is a proxy for their relative wealth in their society. Toggle and see the difference!<br>
+                                        <br>
+                                        [1] For more info, see: <a href="http://www.wou.edu/~shawd/mediocristan--extremistan.html">Mediocristan &amp; Extremistan</a>.
+                                        <br>
+                                        [2] <a href="https://en.wikipedia.org/wiki/Gini_coefficient">Gini Coefficients</a>
 				</p>
 				<button class="close">Close</button>
 			</aside>
